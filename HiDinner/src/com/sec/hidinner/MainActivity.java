@@ -1,5 +1,7 @@
 package com.sec.hidinner;
 
+import com.baidu.mapapi.SDKInitializer;
+import com.sec.hidinner.location.LocationDemo;
 import com.sec.hidinner.location.MyLocation;
 
 import android.app.Activity;
@@ -24,8 +26,14 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,MyLocation.class);
-				startActivity(intent);
+				Intent intent = new Intent(MainActivity.this,LocationDemo.class);
+				
+				try {
+					startActivity(intent);
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				
 			}
 		});
