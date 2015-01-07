@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView 
+            android:layout_gravity="left"
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="#007200"
+        android:src="@drawable/broadcast"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="24小时营业的小店现已开业！！欢迎光临！！"
+            android:layout_weight="1"
+            />
+           <ImageView 
+            android:layout_gravity="right|center"
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cm_edit_del_nor"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:baselineAligned="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:showDividers="beginning|middle"
+        android:layout_marginBottom="10dp"
+        android:divider="@drawable/n_divider"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+             android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="餐厅评分"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4.2分"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_weight="1"
+             android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+             <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2km平均送达速度"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="30minte"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="及时送达率"/>
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="69%"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.example.multilistview.MyListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e4e3de"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/listitem_divide"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </com.example.multilistview.MyListView>
+
+        <com.example.multilistview.MyListView
+            android:id="@+id/subListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e4e3de" >
+        </com.example.multilistview.MyListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/btn_date_normal_pressed" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="购物车是空的" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dp"
+            android:text="还差20元" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sub_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:background="#00000000"
+                android:text="劲爆鸡米花" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/sale_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="月售300份"
+                android:textColor="#132644" />
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="5dp"
+                android:text="14元／份" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/btn_share_add_normal"/>
+        </FrameLayout>
+
+        <TableRow android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="大肉排.免费汽水"
+                android:textColor="#132644"
+                 />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
