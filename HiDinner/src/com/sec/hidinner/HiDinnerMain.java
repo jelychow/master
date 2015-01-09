@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.sec.hidinner.adpater.ShopListAdapter;
 import com.sec.hidinner.shop.ShopBean;
+import com.sec.hidinner.shop.ShopMain;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -65,9 +66,21 @@ public class HiDinnerMain extends Activity implements OnItemClickListener {
         mDrawerList.setOnItemClickListener(this);
         
         ListView shopList = (ListView) findViewById(R.id.shop_list);
+        
         BaseAdapter baseAdapter = new ShopListAdapter(this,mShopList,shopList);
         try {
             shopList.setAdapter(baseAdapter);
+            shopList.setOnItemClickListener(new OnItemClickListener(){
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                        int position, long id) {
+                    Intent intent = new Intent(HiDinnerMain.this,ShopMain.class);
+                    startActivity(intent);
+                }
+                }
+                
+            );
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -144,19 +157,20 @@ public class HiDinnerMain extends Activity implements OnItemClickListener {
     }
 
     @Override
-    public void onItemClick(AdapterView<?> arg0, View arg1, int position,
+    public void onItemClick(AdapterView<?> v1, View v, int position,
             long arg3) {
         // 动态插入一个Fragment到FrameLayout当中
-        Fragment contentFragment = new ContentFragment();
-        Bundle args = new Bundle();
-        args.putString("text", menuLists.get(position));
-        contentFragment.setArguments(args);
+            Fragment contentFragment = new ContentFragment();
+            Bundle args = new Bundle();
+            args.putString("text", menuLists.get(position));
+            contentFragment.setArguments(args);
 
-        FragmentManager fm = getFragmentManager();
-        fm.beginTransaction().replace(R.id.content_frame, contentFragment)
-                .commit();
+            FragmentManager fm = getFragmentManager();
+            fm.beginTransaction().replace(R.id.content_frame, contentFragment)
+                    .commit();
 
-        mDrawerLayout.closeDrawer(mDrawerList);
-    }
+            mDrawerLayout.closeDrawer(mDrawerList);
+            
 
 }
+    }

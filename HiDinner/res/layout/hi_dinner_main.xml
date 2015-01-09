@@ -1,4 +1,4 @@
-                                                                          <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
@@ -267,6 +267,7 @@
                 android:background="#d6d4cf" />
 
             <FrameLayout
+                android:id="@+id/fl_list"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" >
 
@@ -290,62 +291,63 @@
             <ListView
                 android:id="@+id/shop_list"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
             </ListView>
         </LinearLayout>
-       <RadioGroup
-                    android:id="@+id/radioGroup2"
-                    android:layout_width="fill_parent"
-                    android:layout_height="30dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="bottom"
-                    android:background="#e00a486b"
-                    android:button="@drawable/btn_radio_holo_light1"
-                    android:clickable="false"
-                    android:orientation="horizontal" >
 
-                    <RadioButton
-                        android:id="@+id/order"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:text="点餐"
-                        android:checked="true"
-                        android:clickable="false" />
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:background="#e00a486b"
+            android:button="@drawable/btn_radio_holo_light1"
+            android:clickable="false"
+            android:orientation="horizontal" >
 
-                    <RadioButton
-                        android:id="@+id/lightening_order"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="抢单"
-                        android:layout_marginLeft="5dp"
-                        android:clickable="false" />
+            <RadioButton
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:checked="true"
+                android:clickable="false"
+                android:text="点餐" />
 
-                    <RadioButton
-                        android:id="@+id/others"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:button="@drawable/widget_add_pressed"
-                        android:clickable="false" />
+            <RadioButton
+                android:id="@+id/lightening_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:text="抢单" />
 
-                    <RadioButton
-                        android:id="@+id/messages"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="消息"
-                        android:layout_marginLeft="5dp"
-                        android:clickable="false" />
+            <RadioButton
+                android:id="@+id/others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:button="@drawable/widget_add_pressed"
+                android:clickable="false" />
 
-                    <RadioButton
-                        android:id="@+id/friends"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="朋友圈"
-                        android:layout_marginLeft="5dp"
-                        android:clickable="false" />
-                </RadioGroup>
+            <RadioButton
+                android:id="@+id/messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:text="消息" />
+
+            <RadioButton
+                android:id="@+id/friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:text="朋友圈" />
+        </RadioGroup>
     </FrameLayout>
 
     <!-- The navigation view -->

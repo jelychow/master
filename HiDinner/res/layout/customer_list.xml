@@ -7,26 +7,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-          <TextView
-        android:id="@+id/tv_current_max"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="当前最高"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-	<TextView 
-	    android:layout_width="0dp"
-	    android:layout_height="0dp"
-	    android:layout_weight="1"
-	    />
-    <Button
-        android:id="@+id/select_by_self"
-        android:layout_width="wrap_content"
-        android:text="筛选"
-        android:layout_height="wrap_content" />
-        
+
+        <TextView
+            android:id="@+id/tv_current_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前最高"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/select_by_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="筛选" />
     </LinearLayout>
 
-  
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"

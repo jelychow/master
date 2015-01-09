@@ -44,10 +44,12 @@
                 android:text="14元／份" />
 
             <ImageButton
+                android:id="@+id/ib_pick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginLeft="10dp"
+                android:onClick="PickMeal"
                 android:src="@drawable/btn_share_add_normal"/>
         </FrameLayout>
 

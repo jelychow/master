@@ -3,13 +3,16 @@ package com.sec.hidinner.shop;
 import java.util.ArrayList;
 
 import com.sec.hidinner.R;
+import com.sec.hidinner.sociation.CourierSetup;
 
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
@@ -87,8 +90,20 @@ public class ShopMain extends Activity {
         mealSets.add(m2);
         listView = (MyListView) findViewById(R.id.listView);
         subListView = (MyListView) findViewById(R.id.subListView);
+        findViewById(R.id.tv_limit).setOnClickListener(new OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ShopMain.this,CourierSetup.class);
+                startActivity(intent);
+            }
+            
+        });
     }
 
+    public void PickMeal(){
+        
+    }
     private void selectDefult() {
         final int location = 0;
         myAdapter.setSelectedPosition(0);
