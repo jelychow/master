@@ -40,7 +40,7 @@ public class OrderPickedActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OrderPickedActivity.this,
-                       LighteningList.class);
+                       OrderListActivity.class);
                   startActivity(intent);
             }
             

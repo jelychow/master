@@ -17,4 +17,7 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="orderDetailTv" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
 </resources>

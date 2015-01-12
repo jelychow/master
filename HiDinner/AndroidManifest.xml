@@ -112,8 +112,13 @@
         </activity>
         <activity android:name=".location.LocationDemo" >
         </activity>
-        <activity android:name=".bills.LighteningList"></activity>
-        <activity android:name=".bills.OrderPickedActivity"></activity>
+        <activity android:name=".bills.OrderListActivity" >
+        </activity>
+        <activity android:name=".bills.OrderPickedActivity" >
+        </activity>
+        <activity android:name=".bills.OrderDetailActivity" >
+        </activity>
+        <activity android:name=".bills.OrderGetSuccessActivity"></activity>
     </application>
 
 </manifest>
