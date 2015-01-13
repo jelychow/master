@@ -6,6 +6,7 @@ import java.util.List;
 import com.sec.hidinner.adpater.ShopListAdapter;
 import com.sec.hidinner.shop.ShopBean;
 import com.sec.hidinner.shop.ShopMain;
+import com.zxing.activity.CaptureActivity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -24,6 +25,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class HiDinnerMain extends Activity implements OnItemClickListener {
     private DrawerLayout mDrawerLayout;
@@ -60,6 +62,7 @@ public class HiDinnerMain extends Activity implements OnItemClickListener {
         menuLists.add("好友");
         menuLists.add("信息");
         menuLists.add("设置");
+        menuLists.add("扫描二维码");
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, menuLists);
         mDrawerList.setAdapter(adapter);
@@ -159,6 +162,11 @@ public class HiDinnerMain extends Activity implements OnItemClickListener {
     @Override
     public void onItemClick(AdapterView<?> v1, View v, int position,
             long arg3) {
+    	TextView tv1 = (TextView) v.findViewById(android.R.id.text1);
+    	if (tv1.getText().equals("扫描二维码")){
+    		Intent intent = new Intent (HiDinnerMain.this,CaptureActivity.class);
+    		startActivity(intent);
+    	}
         // 动态插入一个Fragment到FrameLayout当中
             Fragment contentFragment = new ContentFragment();
             Bundle args = new Bundle();
