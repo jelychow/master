@@ -136,6 +136,7 @@
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity android:name=".user.UserCenterActivity"></activity>
+        <activity android:name=".user.UserDataActivity"/>
     </application>
 
 </manifest>
