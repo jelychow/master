@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -54,12 +55,12 @@ public class SubAdapter extends BaseAdapter {
         if (convertView == null) {
             convertView = layoutInflater.inflate(R.layout.sublist_item, null);
             viewHolder = new ViewHolder();
-            viewHolder.subItem = (LinearLayout) convertView
+            viewHolder.subItem = ( FrameLayout) convertView
                     .findViewById(R.id.sub_item);
-            viewHolder.orderName = (Button) convertView
-                    .findViewById(R.id.order_name);
+            viewHolder.orderName = (TextView ) convertView
+                    .findViewById(R.id.tv_name);
             viewHolder.saleNum = (TextView) convertView
-                    .findViewById(R.id.sale_num);
+                    .findViewById(R.id.tv_num);
             viewHolder.saleDetail = (TextView) convertView
                     .findViewById(R.id.tv_details);
             viewHolder.salePrice = (TextView) convertView
@@ -77,8 +78,8 @@ public class SubAdapter extends BaseAdapter {
     }
 
     public static class ViewHolder {
-        public LinearLayout subItem;;
-        public Button orderName;
+        public FrameLayout subItem;;
+        public TextView orderName;
         public TextView saleNum;
         public TextView saleDetail;
         public TextView salePrice;

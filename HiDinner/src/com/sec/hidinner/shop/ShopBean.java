@@ -16,7 +16,28 @@ public class ShopBean {
     private String saleLimit;
     private String delividerTime;
     private String discount;
-    private String newCustomerActivity;
+    private String grade;
+    private String type;
+    private String distance;
+    public String getGrade() {
+		return grade;
+	}
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getDistance() {
+		return distance;
+	}
+	public void setDistance(String distance) {
+		this.distance = distance;
+	}
+	private String newCustomerActivity;
     public String getName() {
         return name;
     }

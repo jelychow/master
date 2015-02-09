@@ -21,6 +21,7 @@ public class OrderDetailActivity extends Activity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_detail_activity);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         back = (Button) findViewById(R.id.btn_back);
         back.setOnClickListener(this);
         start = (Button) findViewById(R.id.btn_start);

@@ -24,44 +24,44 @@ public class MyListView extends ListView implements Runnable {
           super(context); 
     } 
  
-    @Override 
-    public boolean onTouchEvent(MotionEvent event) { 
-         switch (event.getAction()) { 
-              case MotionEvent.ACTION_DOWN: 
-                   if (mLastDownY == 0f && mDistance == 0) { 
-                         mLastDownY = event.getY(); 
-                   return true; 
-              } 
-              break; 
- 
-    case MotionEvent.ACTION_CANCEL: 
-           break;
-
-    case MotionEvent.ACTION_UP: 
-          if (mDistance != 0) { 
-           mStep = 1; 
-           mPositive = (mDistance >= 0); 
-           this.post(this); 
-           return true; 
-        } 
-        mLastDownY = 0f; 
-        mDistance = 0; 
-        break; 
- 
-    case MotionEvent.ACTION_MOVE: 
-        if (mLastDownY != 0f) { 
-              mDistance = (int) (mLastDownY - event.getY()); 
-              if ((mDistance < 0 && getFirstVisiblePosition() == 0 && getChildAt(0).getTop() == 0) || (mDistance > 0 && getLastVisiblePosition() == getCount() - 1)) { 
-                   mDistance /= 2; 
-                   scrollTo(0, mDistance); 
-                   return true; 
-               } 
-        } 
-        mDistance = 0; 
-        break; 
-        } 
-        return super.onTouchEvent(event); 
-    } 
+//    @Override 
+//    public boolean onTouchEvent(MotionEvent event) { 
+//         switch (event.getAction()) { 
+//              case MotionEvent.ACTION_DOWN: 
+//                   if (mLastDownY == 0f && mDistance == 0) { 
+//                         mLastDownY = event.getY(); 
+//                   return true; 
+//              } 
+//              break; 
+// 
+//    case MotionEvent.ACTION_CANCEL: 
+//           break;
+//
+//    case MotionEvent.ACTION_UP: 
+//          if (mDistance != 0) { 
+//           mStep = 1; 
+//           mPositive = (mDistance >= 0); 
+//           this.post(this); 
+//           return true; 
+//        } 
+//        mLastDownY = 0f; 
+//        mDistance = 0; 
+//        break; 
+// 
+//    case MotionEvent.ACTION_MOVE: 
+//        if (mLastDownY != 0f) { 
+//              mDistance = (int) (mLastDownY - event.getY()); 
+//              if ((mDistance < 0 && getFirstVisiblePosition() == 0 && getChildAt(0).getTop() == 0) || (mDistance > 0 && getLastVisiblePosition() == getCount() - 1)) { 
+//                   mDistance /= 2; 
+//                   scrollTo(0, mDistance); 
+//                   return true; 
+//               } 
+//        } 
+//        mDistance = 0; 
+//        break; 
+//        } 
+//        return super.onTouchEvent(event); 
+//    } 
  
     public void run() { 
           mDistance += mDistance > 0 ? -mStep : mStep; 

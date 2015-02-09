@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/image_grid_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="2dp" >
+
+                    <GridView
+                        android:id="@+id/image_grid_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" >
+                    </GridView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TableLayout
+                android:id="@+id/MorePageTableLayout_Client"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1.0dip"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <LinearLayout
+                    android:id="@+id/more_page_row4"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/more_itemtop_press"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:text="主营业务"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="35dp"
+                        android:text="西餐"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/more_page_row8"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/more_itemtop_press"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:text="店铺介绍"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="35dp"
+                        android:text="KFC是一家主营西式快餐的连锁企业，其中特色饮食主要包含：劲暴鸡米花，牛肉煲等，各种美食任你选择！！"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/more_page_row6"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/more_itemtop_press"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:text="地址      "
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="35dp"
+                        android:text="汉中路188号"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/more_page_row5"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/more_itembottom_press"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:text="人均消费"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="35dp"
+                        android:text="60元"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/more_page_row3"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/more_itembottom_press"
+                    android:paddingBottom="16.0dip"
+                    android:paddingTop="16.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="15dp"
+                        android:includeFontPadding="false"
+                        android:text="大众评分"
+                        android:textColor="#ff333333"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="35dp"
+                        android:text="4.8"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_itembottom_press" >
+
+                <Button
+                    android:id="@+id/btn_enter_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="30dp"
+                    android:background="#00000000"
+                    android:text="进入店铺"
+                    android:textColor="@color/blue" />
+
+                <Button
+                    android:id="@+id/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="30dp"
+                    android:background="#00000000"
+                    android:text="返回"
+                    android:textColor="@color/blue" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

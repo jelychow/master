@@ -3,6 +3,7 @@ package com.sec.hidinner.shop;
 import java.util.ArrayList;
 
 import com.sec.hidinner.R;
+import com.sec.hidinner.product.ProductDetails;
 import com.sec.hidinner.sociation.CourierSetup;
 
 import android.os.Bundle;
@@ -14,10 +15,11 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class ShopMain extends Activity {
+public class ShopMain extends Activity implements OnClickListener {
 
     private MyListView listView;
     private MyListView subListView;
@@ -25,7 +27,8 @@ public class ShopMain extends Activity {
     private SubAdapter subAdapter;
     private ArrayList<MealSet> mealSets;
     private  MealSet m1 ;
-    String foods[] = new String[] { "全部频道", "美食", "休闲娱乐", "购物", "酒店", "丽人",
+
+    String foods[] = new String[] { "全部频道", "美食", "中餐", "西餐", "快餐", "小吃",
             "生活服务" };
     int images[] = new int[] { R.drawable.ic_category_0,
             R.drawable.ic_category_10, R.drawable.ic_category_30,
@@ -62,10 +65,8 @@ public class ShopMain extends Activity {
                             @Override
                             public void onItemClick(AdapterView<?> arg0, View arg1,
                                     int position, long arg3) {
-                                // TODO Auto-generated method stub
-                                Toast.makeText(getApplicationContext(),
-                                        mealSets.get(location).getOrderName(), Toast.LENGTH_SHORT)
-                                        .show();
+                            	 Intent intent = new Intent(ShopMain.this,ProductDetails.class);
+                                 startActivity(intent);
                             }
                         });
                     }
@@ -90,7 +91,7 @@ public class ShopMain extends Activity {
         mealSets.add(m2);
         listView = (MyListView) findViewById(R.id.listView);
         subListView = (MyListView) findViewById(R.id.subListView);
-        findViewById(R.id.tv_limit).setOnClickListener(new OnClickListener(){
+        findViewById(R.id.btn_ok).setOnClickListener(new OnClickListener(){
 
             @Override
             public void onClick(View v) {
@@ -116,10 +117,20 @@ public class ShopMain extends Activity {
             public void onItemClick(AdapterView<?> arg0, View arg1,
                     int position, long arg3) {
                 // TODO Auto-generated method stub
-                Toast.makeText(getApplicationContext(),
-                        mealSets.get(location).getOrderName(), Toast.LENGTH_SHORT).show();
+            	 Intent intent = new Intent(ShopMain.this,ProductDetails.class);
+                 startActivity(intent);
             }
         });
     }
+
+	@Override
+	public void onClick(View v) {
+		switch(v.getId()){
+			
+		case R.id.btn_get_order:
+			
+			break;
+		}
+	}
 
 }

@@ -4,16 +4,15 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
-    android:background="@drawable/order_detail_bg"
     android:orientation="vertical" >
 
-    <TextView
+<!--     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="详细信息" />
-
+ -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -33,12 +32,6 @@
             android:text="商品：豪华套餐，一份" />
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/tv_leaving_place"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="起始地点" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -73,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left|center"
-        android:layout_marginRight="5dp"
+        android:layout_marginRight="10dp"
         android:text="备注：hurry up" />
 
     <FrameLayout
@@ -114,7 +107,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="店小二，二级"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         android:id="@+id/tv_personal_title"
@@ -123,7 +116,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="订单达人"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -136,7 +129,7 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="订单积分"
-            android:textColor="#ffffff" />
+            android:textColor="@color/blue" />
 
         <TextView
             android:id="@+id/tv_max_bonus"
@@ -144,7 +137,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="最高赏金：￥10"
-            android:textColor="#ffffff" />
+            android:textColor="@color/blue" />
     </FrameLayout>
 
     <FrameLayout
@@ -158,7 +151,7 @@
             android:layout_height="wrap_content"
             android:gravity="left"
             android:text="抢单积分"
-            android:textColor="#ffffff" />
+            android:textColor="@color/blue" />
 
         <TextView
             android:id="@+id/tv_max_get"
@@ -166,7 +159,7 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="最高抢单：￥15"
-            android:textColor="#ffffff" />
+            android:textColor="@color/blue" />
     </FrameLayout>
 
     <TextView
@@ -176,7 +169,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="个性签名：you are not so fast！！"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         android:id="@+id/tv_personal_album"
@@ -185,14 +178,14 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="相册：未公开"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         style="@style/orderDetailTv"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#00000000"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         android:id="@+id/tv_personal_reputation"
@@ -201,7 +194,7 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="个人信誉：未公开"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         style="@style/orderDetailTv"
@@ -210,7 +203,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="#000000"
-        android:textColor="#ffffff" />
+        android:textColor="@color/blue" />
 
     <TextView
         style="@style/orderDetailTv"
