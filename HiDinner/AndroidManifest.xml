@@ -161,6 +161,8 @@
         <activity android:name=".setting.AddressActivity"></activity>
         <activity android:name=".setting.AddAddressActivity"></activity>
         <activity android:name=".setting.AddressDetailActivity"></activity>
+        <activity android:name="LoginActivity"></activity>
+        <activity android:name="RegisterActivity"></activity>
     </application>
 
 </manifest>

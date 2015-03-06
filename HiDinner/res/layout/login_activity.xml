@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <com.sec.hidinner.customview.ClearEditTextView
+        android:id="@+id/login_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="5.0dip"
+        android:hint="用户名/邮箱"
+        android:background="@drawable/text_field_without_top_border"
+        android:singleLine="true"
+        android:textColor="#ff555555"
+        android:textColorHint="#ff888888"
+        android:textSize="16.0sp" />
+
+    <com.sec.hidinner.customview.ClearEditTextView
+        android:id="@+id/login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/text_field_without_top_border"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#ff555555"
+        android:textColorHint="#ff888888"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/login_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/selector_green_corners_button"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    
+            <RelativeLayout
+                android:id="@+id/layout_login_userinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/find_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="@string/find_password"
+                    android:textColor="#494949"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/registerfree"
+                    android:textColor="#494949"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+</LinearLayout>

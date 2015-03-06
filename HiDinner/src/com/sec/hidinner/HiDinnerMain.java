@@ -74,12 +74,16 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 		menuLists = new ArrayList<String>();
 		//menuLists.add("我的账户");
-		menuLists.add("订单记录");
+		
 		menuLists.add("个人主页");
+		menuLists.add("扫描二维码");
+		menuLists.add("设置");
+		menuLists.add("登录");
+		menuLists.add("订单记录");
 		menuLists.add("好友");
 		menuLists.add("信息");
-		menuLists.add("设置");
-		menuLists.add("扫描二维码");
+		
+		
 		
 		pageAdapter= new MainPagerAdapter(fragmentManager, fragments);
 		mViewPager.setAdapter(pageAdapter);
@@ -194,6 +198,11 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 		else if (tv1.getText().equals("设置")) {
 			Intent intent = new Intent(HiDinnerMain.this,
 					SettingsActivity.class);
+			startActivity(intent);
+		}
+		else if (tv1.getText().equals("登录")) {
+			Intent intent = new Intent(HiDinnerMain.this,
+					LoginActivity.class);
 			startActivity(intent);
 		}
 		// 动态插入一个Fragment到FrameLayout当中

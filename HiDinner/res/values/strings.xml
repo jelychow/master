@@ -50,6 +50,16 @@
     <string name="app_host">http://10.0.2.2:8080/ECServer_HH/</string>
     <string name="topic_plist">topic/plist</string>
     <string name="home">home</string>
+    <!-- register -->
+     <string name="register_in_normal">普通用户注册</string>
+    <string name="register_normal_useraccount">帐户名：</string>
+    <string name="register_normal_useraccount_hint">请输入你的手机号</string>
+    <string name="register_normal_email">邮箱：</string>
+    <string name="register_normal_email_hint">请输入邮箱帐号</string>
+    <string name="register_normal_password">密码：</string>
+    <string name="register_normal_password_hint">请输入密码</string>
+    <string name="register_normal_repassword">确认密码：</string>
+    <string name="register_normal_repassword_hint">请输入确认密码</string>
     <!-- peiwen -->
     <string name="hotproduct">hotproduct</string>
     <string name="productcommit">product/comment</string>
@@ -134,5 +144,8 @@
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+    <string name="register_normal_tip">to be done</string>
+    <string name="find_password">找回密码</string>
+    <string name="registerfree">免费注册</string>
 
 </resources>

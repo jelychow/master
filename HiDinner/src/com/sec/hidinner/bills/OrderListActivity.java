@@ -72,17 +72,17 @@ public class OrderListActivity extends Activity implements OnItemClickListener{
             
         });
         mHandler.sendEmptyMessageAtTime(001, 2000);
-        mHandler.postDelayed(new Runnable() {
-
-            @Override
-            public void run() {
-                new AlertDialog.Builder(OrderListActivity.this)
-                        .setTitle("有人抢单，抢单成功").setMessage("接头暗号，天王盖地虎，小鸡炖蘑菇")
-                        .setPositiveButton("知道了", null).show();
-
-            }
-
-        }, 3000);
+//        mHandler.postDelayed(new Runnable() {
+//
+//            @Override
+//            public void run() {
+//                new AlertDialog.Builder(OrderListActivity.this)
+//                        .setTitle("有人抢单，抢单成功").setMessage("接头暗号，天王盖地虎，小鸡炖蘑菇")
+//                        .setPositiveButton("知道了", null).show();
+//
+//            }
+//
+//        }, 3000);
 
     }
 

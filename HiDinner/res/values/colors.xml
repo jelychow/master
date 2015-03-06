@@ -107,5 +107,7 @@
     <color name="darkgray">#ff808080</color>
     <color name="fontblack">#ff4b4b4b</color>
     <color name="home_item_selector">#ffc9c9c9</color>
+    <color name="green_light">#ff4caaf4</color>
+    <color name="green_dark">#ff469ce0</color>
 
 </resources>
