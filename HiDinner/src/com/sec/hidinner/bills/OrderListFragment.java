@@ -22,6 +22,8 @@ import android.widget.AdapterView.OnItemClickListener;
 
 import com.sec.hidinner.R;
 import com.sec.hidinner.adpater.OrderListAdapter;
+import com.sec.hidinner.sociation.Courier;
+import com.sec.hidinner.sociation.CourierSetup;
 
 public class OrderListFragment extends Fragment {
 
@@ -61,7 +63,7 @@ public class OrderListFragment extends Fragment {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				Intent intent = new Intent(getActivity(),
-						OrderDetailActivity.class);
+						CourierSetup.class);
 				startActivity(intent);
 
 			}

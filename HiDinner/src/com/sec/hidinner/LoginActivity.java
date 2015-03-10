@@ -69,8 +69,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 			loginName = mLoginName.getText().toString();
 			loginPw = mLoginPassword.getText().toString();
 //			register(loginName,loginPw);
-//			login();
-			getUserInfo();
+			login();
+		//	getUserInfo();
 			break;
 		case R.id.register:
 			Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);

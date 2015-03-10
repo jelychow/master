@@ -41,7 +41,6 @@ import android.graphics.Paint;
 import android.graphics.Bitmap.Config;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.hardware.camera2.params.MeteringRectangle;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;

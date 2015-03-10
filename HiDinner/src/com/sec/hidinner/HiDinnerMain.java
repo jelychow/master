@@ -50,6 +50,7 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 	private Button mOrderMill;
 	private Button mGetOrder;
 	private Button mMessages;
+	private Button mOther;
 	private MainPagerAdapter pageAdapter;
 	private ArrayList<Fragment>fragments;
 	FragmentManager fragmentManager = getFragmentManager();
@@ -127,7 +128,8 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 		mGetOrder.setOnClickListener(this);
 		mMessages = (Button) findViewById(R.id.btn_my);
 		mMessages.setOnClickListener(this);
-
+		 mOther =  (Button) findViewById(R.id.others);
+		 mOther .setOnClickListener(this);
 		// 默认显示 资讯 标签页
 //		transaction.replace(R.id.content, OrderFragment.newInstance())
 //				.commit();
@@ -225,19 +227,34 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 		switch (v.getId()) {
 
 		case R.id.btn_get_order:
-			mViewPager.setCurrentItem(0);
+			mViewPager.setCurrentItem(3);
+			mGetOrder.setTextColor(getResources().getColor(R.color.red));
+			mIndex.setTextColor(getResources().getColor(R.color.black));
+			mOrderMill.setTextColor(getResources().getColor(R.color.black));
+			mOther.setTextColor(getResources().getColor(R.color.black));
+			
 			break;
 
 		case R.id.btn_index:
-			intent = new Intent(HiDinnerMain.this, OrderListActivity.class);
-			startActivity(intent);
+			mViewPager.setCurrentItem(0);
+			mGetOrder.setTextColor(getResources().getColor(R.color.black));
+			mIndex.setTextColor(getResources().getColor(R.color.red));
+			mOrderMill.setTextColor(getResources().getColor(R.color.black));
+			mOther.setTextColor(getResources().getColor(R.color.black));
 			break;
 		case R.id.btn_order_mill:
 			mViewPager.setCurrentItem(1);
+			mGetOrder.setTextColor(getResources().getColor(R.color.black));
+			mIndex.setTextColor(getResources().getColor(R.color.black));
+			mOrderMill.setTextColor(getResources().getColor(R.color.red));
+			mOther.setTextColor(getResources().getColor(R.color.black));
 			break;
-		case R.id.btn_my:
-			intent = new Intent(HiDinnerMain.this, OrderListActivity.class);
-			startActivity(intent);
+		case R.id.others:
+			mViewPager.setCurrentItem(2);
+			mGetOrder.setTextColor(getResources().getColor(R.color.black));
+			mIndex.setTextColor(getResources().getColor(R.color.black));
+			mOrderMill.setTextColor(getResources().getColor(R.color.black));
+			mOther.setTextColor(getResources().getColor(R.color.red));
 			break;
 		}
 	}
@@ -262,7 +279,7 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 			
 			break;
 		case 1:
-			mOrderMill.setTextColor(getResources().getColor(R.color.call_log_missed_call_highlight_color));
+			//mOrderMill.setTextColor(getResources().getColor(R.color.call_log_missed_call_highlight_color));
 			//mOrderMill.setBackgroundResource(getResources().getColor(R.color.background_dialer_light));
 			//mOrderMill.setTextColor(007200);
 			
@@ -271,7 +288,7 @@ public class HiDinnerMain extends Activity implements OnItemClickListener,
 			
 			break;
 		case 3:
-			mGetOrder.setTextColor(getResources().getColor(R.color.call_log_missed_call_highlight_color));
+		//	mGetOrder.setTextColor(getResources().getColor(R.color.call_log_missed_call_highlight_color));
 			break;
 			
 		}

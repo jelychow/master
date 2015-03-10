@@ -18,6 +18,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import com.sec.hidinner.R;
 import com.sec.hidinner.bills.OrderBean;
 import com.sec.hidinner.bills.OrderDetailActivity;
+import com.sec.hidinner.sociation.CourierSetup;
 
 public class FragmentIndex  extends Fragment {
 
@@ -56,7 +57,7 @@ public class FragmentIndex  extends Fragment {
 					int position, long id) {
 				Log.i("NUM", ""+position);
 				Intent intent = new Intent(getActivity(),
-						OrderDetailActivity.class);
+						CourierSetup.class);
 				startActivity(intent);
 
 			}
